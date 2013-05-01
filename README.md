@@ -1,4 +1,4 @@
-# Modernizr.on() Prollyfill
+# Modernizr.on() prollyfill
 
 > Prollyfill: a polyfill for a not yet standardized API.
 
@@ -19,7 +19,7 @@ At time of writing, there are 8 detects which suffer this plight: `todataurl`, `
 
 Modernizr v3.0 (currently in development) is expected to include a new method to make these easier to work with, which at present goes by the name of `Modernizr.on()`.
 
-I should make it clear that the details aren't final yet... but it's prolly gonna look like this:
+I should make it clear that **the details aren't final yet...** but it's prolly gonna look like this:
 
 ```javascript
 Modernizr.on(property, callback)
@@ -44,15 +44,15 @@ Include the `modernizr-on.min.js` script after Modernizr, but before any calls t
 <!DOCTYPE html>
 <html>
 <head>
-    ...
-    <script src="modernizr.custom.js"></script>
+  ...
+  <script src="modernizr.custom.js"></script>
 </head>
 <body>
-    ...
-    <!-- HTML things -->
-    ...
-    <script src="modernizr-on.min.js"></script>
-    <script src="your-other-scripts.js"></script>
+  ...
+  <!-- HTML things -->
+  ...
+  <script src="modernizr-on.min.js"></script>
+  <script src="your-other-scripts.js"></script>
 </body>
 ```
 
@@ -60,12 +60,12 @@ Then you can use it in your scripts something like this:
 
 ```javascript
 Modernizr.on('datauri', function (result) {
-    if (result) {
-        // Browser supports data URIs
-    }
-    else {
-        // Browser doesn't support data URIs
-    }
+  if (result) {
+    // Browser supports data URIs
+  }
+  else {
+    // Browser doesn't support data URIs
+  }
 });
 ```
 
@@ -75,12 +75,12 @@ I'm lazy so I haven't made it AMD-compatible I'm afraid (feel free to [submit a 
 
 ```javascript
 requirejs.config({
-    shim: {
-        'modernizr-on': {
-            deps: ['Modernizr'],
-            exports: 'Modernizr'
-        }
+  shim: {
+    'modernizr-on': {
+      deps: ['Modernizr'],
+      exports: 'Modernizr'
     }
+  }
 });
 ```
 
