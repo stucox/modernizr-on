@@ -69,6 +69,8 @@ Modernizr.on('datauri', function (result) {
 });
 ```
 
+***Please don't*** call `Modernizr.on()` with a property name which doesn't exist in your Modernizr build, because it'll keep looking for it forever and waste CPU cycles. Like I said, it's pretty crude.
+
 ### Usage with [RequireJS](http://requirejs.org/)
 
 I'm lazy so I haven't made it AMD-compatible I'm afraid (feel free to [submit a PR](https://github.com/stucox/modernizr-on/pulls)!), so you should use a [shim config](http://requirejs.org/docs/api.html#config-shim):
