@@ -12,23 +12,23 @@ var Modernizr = (function (Modernizr, undefined) {
   // resolved since the last iteration
   var doCallbacks = function () {
     var prop;
+    var count = callbacks.length;
 
-    for (var i = 0; i < callbacks.length; i++) {
-      prop = callbacks[i][0];
+    while(count--) {
+      prop = callbacks[count][0];
 
       // Properties are `undefined` until resolved
       if (Modernizr[prop] !== undefined) {
-        callbacks[i][1](Modernizr[prop]);
+        callbacks[count][1](Modernizr[prop]);
 
         // Remove the callback so it doesn't fire again
-        callbacks.splice(i, 1);
-        i--;
+        callbacks.splice(count, 1);
       }
+    }
 
-      // If some haven't resolved yet, go round again
-      if (callbacks.length) {
-        setTimeout(doCallbacks, 100);
-      }
+    // If some haven't resolved yet, go round again
+    if (callbacks.length) {
+      setTimeout(doCallbacks, 100);
     }
   };
 
