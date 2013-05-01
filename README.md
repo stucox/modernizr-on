@@ -34,7 +34,7 @@ If the test has already completed (including if you attach a callback to a *sync
 
 ## The polyfill
 
-So, in case you want to start playing with this functionality *now*, here's a very crude, fairly inefficient polyfill.
+So, in case you want to start playing with this functionality *now*, here's a **very crude, fairly inefficient** polyfill.
 
 ### Usage
 
