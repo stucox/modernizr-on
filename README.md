@@ -87,3 +87,7 @@ requirejs.config({
 ```
 
 Although as Modernizr 2.x isn't AMD-compatible either, that'll probably need a shim config too.
+
+## Feedback
+
+If you've got any thoughts about the `Modernizr.on()` API, please tell us over at the [Modernizr issues board](https://github.com/Modernizr/Modernizr/issues), or tweet [@Modernizr](https://twitter.com/Modernizr) or [@StuCoxMedia](https://twitter.com/StuCoxMedia).
