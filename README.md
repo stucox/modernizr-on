@@ -4,11 +4,11 @@
 
 *- Alex Sexton, 2012*
 
-**A polyfill for the (potentially) forthcoming `Modernizr.on()` method, for Modernizr 2.x**
+**A polyfill for the (potentially) forthcoming `Modernizr.on()` method, for Modernizr 2.x.**
 
 ## Background
 
-Handling asynchronous detects in [Modernizr](http://modernizr.com) currently a pain. These are ones which require some deferred action, so won't have finished by the time the rest of Modernizr finishes running:
+Handling asynchronous detects in [Modernizr](http://modernizr.com) is currently a pain. These are ones which require some deferred action, so won't have finished by the time the rest of Modernizr finishes running:
 
 ```html
 <script src="modernizr.custom.js"></script>
