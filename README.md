@@ -4,6 +4,8 @@
 
 *- Alex Sexton, 2012*
 
+**A polyfill for the (potentially) forthcoming `Modernizr.on()` method, for Modernizr 2.x**
+
 ## Background
 
 Handling asynchronous detects in [Modernizr](http://modernizr.com) currently a pain. These are ones which require some deferred action, so won't have finished by the time the rest of Modernizr finishes running:
@@ -34,7 +36,7 @@ If the test has already completed (including if you attach a callback to a *sync
 
 ## The polyfill
 
-So, in case you want to start playing with this functionality *now*, here's a **very crude, fairly inefficient** polyfill.
+So, in case you want to start playing with this functionality *now* (i.e. on 2.x), here's a **very crude, fairly inefficient** polyfill.
 
 ### Usage
 
