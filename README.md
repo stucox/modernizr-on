@@ -6,6 +6,8 @@
 
 **A polyfill for the (potentially) forthcoming `Modernizr.on()` method, for Modernizr 2.x.**
 
+_Update: `Modernizr.on()` did indeed make it into Modernizr 3.0 so now it’s best to just use [the new builder](https://modernizr.com/download) for new projects. This is still useful if you’re rocking a 2.x build like some kind of retro superstar and don’t want to deal with 3.x API changes._
+
 ## Background
 
 Handling asynchronous detects in [Modernizr](http://modernizr.com) is currently a pain. These are ones which require some deferred action, so won't have finished by the time the rest of Modernizr finishes running:
